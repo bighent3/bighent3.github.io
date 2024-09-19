@@ -6,13 +6,17 @@
     scroll-behavior: smooth;
 }
 
+/* navbar settings */
 .navbar {
     background: #131313;
+    background-image: url("/");
     height: 80px;
-    display: flex;
+    /* display: flex; sets container to flexbox element, wraps text onto next line */
+    display: flex;  
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    /* element based on users scroll position */
     position: sticky;
     top: 0;
     z-index: 999;
@@ -29,9 +33,14 @@
     padding: 0 50px;   
 }
 
+.navbar__img--container {
+    text-align: center;
+    padding: 0rem;
+}
+
 #navbar__logo {
-    background-color: #4B2E83;
-    background-image: linear-gradient(to top, #4B2E83 100%, #ffb199 0%);
+    background-color: #fff;
+    background-image: linear-gradient(to top, #fff 100%, #ffb199 0%);
     background-size: 100%;
     background-clip: text;
     background-clip: text;
@@ -42,6 +51,12 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    transition: 0.3s ease;
+}
+
+.navbar__logo:hover {
+    color: #34a2cf;
+    transition: 0.3s ease;
 }
 
 .navbar__menu {
@@ -73,6 +88,12 @@
     width: 100%;
 }
 
+
+.navbar__btn:hover {
+    color:#4b2e83;
+    transition: 0.3s ease;
+}
+
 .button {
     display: flex;
     justify-content: center;
@@ -85,14 +106,14 @@
     outline: none;
     border-radius: 4px;
     background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045,#fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045,#fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(to right, #fcb045,#34a2cf, #34a2cf);
+    background: linear-gradient(to right, #34a2cf,#34a2cf, #34a2cf);
     color: #fff;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #9518fc;
+    color: #34a2cf;
     transition: all 0.3s ease;
 }
 
@@ -194,19 +215,34 @@
 .hero {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
+    background-image:  url("https://images.unsplash.com/photo-1502175353174-a7a70e73b362?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VhdHRsZXxlbnwwfHwwfHx8MA%3D%3D");
     padding: 200px 0;
 }
 
 .hero__container {
     display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    height: 90%;
+    height: 80%;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
+}
+
+.hero__img--container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure the image container scales correctly */
+    text-align: center;
+    padding: 0rem;
+}
+
+.hero__img--container p {
+    text-align: left;
+    padding: 0.2rem;
+    font-size: 1.1rem;
 }
 
 .hero__heading {
@@ -271,7 +307,13 @@
 
 /* About Section */
 .main {
-    background-color: #131313;
+    background: #131313;
+    background-image: url("/");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     padding: 10rem 0;
 }
 
@@ -288,12 +330,17 @@
     padding: 0 50px;
 }
 
+
+
 .main__content {
     color: #fff;
     width: 100%;
 }
 
 .main__content h1 {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
     font-size: 2rem;
     background-color: #fe3b6f;
     background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
@@ -335,9 +382,9 @@ background-clip: text;
 
 .main__btn {
     font-size: 1.8rem;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045,#fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045,#fd1d1d, #833ab4);
+    background: #34a2cf;
+    background: -webkit-linear-gradient(to right, #34a2cf,#34a2cf, #34a2cf);
+    background: linear-gradient(to right, #34a2cf,#34a2cf, #34a2cf);
     padding: 20px 60px;
     border: none;
     border-radius: 4px;
@@ -362,7 +409,7 @@ background-clip: text;
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff1ead;
+    background: #4b2e83;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -371,24 +418,38 @@ background-clip: text;
     color:#fff;
 }
 
+.main h1 {
+    background-color: #fff;
+    background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-textofill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
 .main__btn:hover:after {
     width: 100%;
 }
 
 .main__img--container {
     text-align: center;
+    padding: 0rem;
 }
 
 .main__img--card {
     margin: 10px;
-    height: 500px;
-    width: 500px;
+    height: 286px;
+    width: 600px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: url("https://demographicperspectives.com/wp-content/uploads/2019/08/University-of-Washington-e1569276289826.jpg")
+    ;
 }
 
 .fa-layer-group,
@@ -401,6 +462,65 @@ background-clip: text;
     background: -webkit-linear-gradient(to right, #dd2476,#ff512f);
     background: linear-gradient(to right, #dd2476, #ff512f);
 }
+
+.main__img--container img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without stretching */
+}
+
+.main__img--container h2 {
+    font-size: 2.5rem;
+    margin-top: 0rem;
+    margin-left: 3rem;
+    text-align: left;
+}
+
+.main__img--container p {
+    font-size: 2rem;
+    margin-top: 0rem;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.main__content img {
+    max-width: 100%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Prevent distortion */
+}
+
+.main__img--card {
+    height: 425px;
+    width: 425px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .main__img--container {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Ensure the image container scales correctly */
+    }
+
+    .main__img--card {
+        height: 425px;
+        width: 425px;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 1100px) {
@@ -476,17 +596,18 @@ background-clip: text;
 /* Services Section */
 .services {
     background: #131313;
+    background-image: url("/");
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 10rem 0;
+    padding: 1rem 0;
 }
 
 .services h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+    background-color: #fff;
+    background-image: linear-gradient(to right, #fff 0%, #fff 100%);
     background-size: 100%;
     background-clip: text;
     -moz-background-clip: text;
@@ -499,7 +620,7 @@ background-clip: text;
 .services__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
 }
 
 .services__card {
@@ -511,7 +632,50 @@ background-clip: text;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: url("https://transform.octanecdn.com/width/900/https://octanecdn.com/minersengine/minersengine_514420839.png");
+    /* background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); */
+    transition: 0.3s ease-in;
+}
+
+.services__card1 {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: url("https://s3.amazonaws.com/hoth.bizango/images/508254/Kiara_gallery.jpg");
+    /* background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); */
+    transition: 0.3s ease-in;
+}
+
+.services__card2 {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: url("https://cdn.geekwire.com/wp-content/uploads/2017/07/Lincoln-Square-exp-630x839.jpg");
+    /* background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); */
+    transition: 0.3s ease-in;
+}
+
+.services__card3 {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: url("https://en.tongwei.com.cn/uploads/20240628/b0b78b848ff3938ed92b5997e75ddc7f.jpg");
+    /* background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); */
     transition: 0.3s ease-in;
 }
 
@@ -545,7 +709,37 @@ background-clip: text;
     text-align: center;
 }
 
+.services__card1 h2 {
+    text-align: center;
+}
+
+.services__card2 h2 {
+    text-align: center;
+}
+
+.services__card3 h2 {
+    text-align: center;
+}
+
 .services__card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.services__card1 p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.services__card2 p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.services__card3 p {
     text-align: center;
     margin-top: 24px;
     font-size: 20px;
@@ -558,6 +752,36 @@ background-clip: text;
 }
 
 .services__card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.services__card1 button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.services__card2 button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.services__card3 button {
     color: #fff;
     padding: 14px 24px;
     border: none;
@@ -592,6 +816,7 @@ background-clip: text;
 /* Footer CSS */
 .footer__container {
     background-color: #131313;
+    background-image: url("/");
     padding:5rem 0;
     display: flex;
     flex-direction: column;
@@ -704,4 +929,32 @@ background-clip: text;
         padding: 10px;
         width: 100%;
     }
+}
+
+.experience {
+    grid-template-columns: 1fr 1fr;
+}
+
+.experience__pier {
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.experience__estimator {
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.experience__carpenter {
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.experience__green {
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 20px;
 }
