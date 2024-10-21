@@ -150,7 +150,7 @@
         font-size: 1.6rem;
     }
 
-    #navbar__lgo {
+    #navbar__logo {
         padding-left: 25px;
     }
 
@@ -932,29 +932,31 @@ background-clip: text;
 }
 
 .experience {
-    grid-template-columns: 1fr 1fr;
+    display: flex;             /* Use Flexbox */
+    flex-direction: column;    /* Stack items vertically */
+    align-items: center;       /* Center items horizontally */
+    justify-content: center;   /* Center items vertically */
+    padding: 20px;             /* Add padding for spacing */
 }
 
-.experience__pier {
-    font-size: 20px;
-    margin-left: 500px;
-    margin-top: 20px;
-}
-
-.experience__estimator {
-    font-size: 20px;
-    margin-left: 500px;
-    margin-top: 20px;
-}
-
-.experience__carpenter {
-    font-size: 20px;
-    margin-left: 500px;
-    margin-top: 20px;
-}
-
+.experience__pier,
+.experience__estimator,
+.experience__carpenter,
 .experience__green {
     font-size: 20px;
-    margin-left: 500px;
     margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;        /* Center the text for h1, h2, and p */
+    display: flex;             /* Use flexbox */
+    flex-direction: column;    /* Stack content vertically */
+    align-items: left;       /* Align content horizontally on the left */
+}
+
+.experience__pier h1, .experience__estimator h1, .experience__carpenter h1, .experience__green h1,
+.experience__pier h2, .experience__estimator h2, .experience__carpenter h2, .experience__green h2,
+.experience__pier p, .experience__estimator p, .experience__carpenter p, .experience__green p {
+    text-align: left;        /* Left text alignment */
+    margin: 0;                 /* Remove any default margins */
+    padding: 5px 0;           /* Optional: Add spacing between elements */
 }
