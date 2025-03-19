@@ -254,7 +254,7 @@ overflow: hidden;
     justify-content: center;
     width: 90%; /* Ensure the image container scales correctly */
     text-align: center;
-    padding: 0rem;
+    padding: 0.3rem;
 }
 
 .hero__img--container p {
