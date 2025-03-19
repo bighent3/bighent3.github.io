@@ -242,6 +242,7 @@ overflow: hidden;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    max-heigh: 800px;
     max-width: 1200px;
     margin: 0 auto;
     height: 80%;
