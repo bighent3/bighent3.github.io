@@ -252,7 +252,7 @@ overflow: hidden;
 .hero__img--container {
     display: flex;
     justify-content: center;
-    width: 100%; /* Ensure the image container scales correctly */
+    width: 90%; /* Ensure the image container scales correctly */
     text-align: center;
     padding: 0rem;
 }
