@@ -217,7 +217,7 @@
     background: linear-gradient(to right, #161616, #000000);
     background-image:  url("https://images.unsplash.com/photo-1502175353174-a7a70e73b362?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VhdHRsZXxlbnwwfHwwfHx8MA%3D%3D");
     padding: 200px 0;
-overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -239,31 +239,50 @@ overflow: hidden;
 
 .hero__container {
     display: flex;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-    max-height: 800px;
+    /* max-height: 800px; */
     max-width: 1200px;
-    margin: 50px;
-    height: 80%;
-    text-align: center;
-    padding: 20px;
+    margin: 0 auto;
+    /* height: 80%; */
+    flex-wrap: wrap;
+    /* text-align: center; */
+    padding: 40px 20px;
+    gap: 40px;
+    min-height: 70vh;
 }
 
 .hero__img--container {
+    flex: 1 1 500px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 90%; /* Ensure the image container scales correctly */
-    text-align: center;
-    padding: 0.8rem;
+    align-items: center;
+    /* width: 90%; Ensure the image container scales correctly */
+    /* text-align: center; */
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .hero__img--container p {
-    background-color: rgb(100, 115, 148);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(100, 115, 148, 0.75);
     text-align: left;
-    padding: 0.2rem;
+    padding: 1.5rem;
     font-size: 1.1rem;
     color: white;
+    border-radius: 10px;
+}
+
+.hero__img--container img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 12px;
 }
 
 .hero__heading {
@@ -317,6 +336,22 @@ overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
+    .hero__container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero__img--container {
+        flex: 1 1 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero__img--container p {
+        /* font-size: 1rem; */
+        text-align: center;
+    }
+
     .hero__heading {
         font-size: 60px;
     }
