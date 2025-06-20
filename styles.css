@@ -493,6 +493,8 @@ background-clip: text;
 .main__img--container {
     text-align: center;
     padding: 0rem;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .main__img--card {
@@ -504,8 +506,8 @@ background-clip: text;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: url("https://demographicperspectives.com/wp-content/uploads/2019/08/University-of-Washington-e1569276289826.jpg")
-    ;
+    background-image: url("https://demographicperspectives.com/wp-content/uploads/2019/08/University-of-Washington-e1569276289826.jpg");
+
 }
 
 .fa-layer-group,
@@ -523,6 +525,7 @@ background-clip: text;
     max-width: 100%;
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the container without stretching */
+    border-radius: 4px;
 }
 
 .main__img--container h2 {
