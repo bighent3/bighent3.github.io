@@ -1,400 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-        <link rel="shortcut icon" type="x-icon" href="https://i.pinimg.com/474x/cd/3c/7a/cd3c7a377253d6a421b8131aa97395e6.jpg">
-    <meta name="viewport" content=""width=device-width, initial-scale="1.0" />
-    <title>Henton Hailey-Marshall</title>
-    <link rel="stylesheet" href="styles.css">
-    <link
-    rel="stylesheet" 
-    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" 
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" 
-    crossorigin="anonymous"/>
-</head>
-<body>
-    <!-- Navbar Section Commenting -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="#home" id="navbar__logo">Henton Hailey-Marshall</a>
-            <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="#home" class="navbar__links"
-                 id="home-page">About Me</a>
-            </li>            
-            <li class="navbar__item">
-                <a href="#about" class="navbar__links"
-                 id="about-page">Education</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#services" class="navbar__links"
-                 id="services-page">Experience</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#gallery" class="navbar__links"
-                 id="Gallery">Gallery</a>
-            </li>
-            <li class="navbar__item">
-                <a href="Henton_Resume_QR.pdf" download class="navbar__links"
-                 id="Gallery">Resume</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#projects" class="button"
-                 id="signup">View Projects</a>
-            </li>
-        </ul>
-        </div>
-    </nav>
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salish SeaTours Online Gift Shop</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <!-- Resume Download Link -->
-<!-- <a href="Henton_Resume_QR.pdf" download>
-  <button>Download My Resume</button>
-</a> -->
+    <body>
 
+        <section id="header">
+            <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-        <div class="hero__container">
-            <div class="hero__img--container">
-                <img src="https://live.staticflickr.com/65535/54321913916_28f403e0c8_z.jpg">
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
             </div>
-            <div class="hero__img--container">
-                <!-- <h1 class="hero__heading">About<span> -->
-                    <!-- <a href="https://www.linkedin.com/in/henton-hailey-marshall-b7452435/"> me</a></span></h1> -->
-                <!-- <p class="hero__description">Biography</p> -->
-                <!-- <h2>Software Engineer & Aspiring Quant</h2> -->
-                <p>A Software Engineer currently pursuing a Computer Engineering degree at the University of Washington, with prior degrees in Business 
-                    Management and Information Systems from the University of Pittsburgh. This academic background provided a strong foundation in data 
-                    analysis, project management, and business operations. Professional experience includes a software engineering internship at Miner’s 
-                    Landing/Pier 57, contributing to the development of a job application system using C++, CSS, Flask, HTML, Java, JavaScript, Python, and SQL. 
-                    Additionally, experience at Anning-Johnson Construction involved managing over $200 million in projects, with a focus on project 
-                    management, financial modeling, and engineering. Passionate about Artificial Intelligence, Machine Learning, Quantitative Finance and 
-                    Algorithmic Trading, having placed near the top in the IMC Prosperity Algorithmic Trading Competition. As an active member of the UW 
-                    Algorithmic Trading, Corporate Banking & Software Engineering Career Club, skills are continuously developed to bridge the gap between 
-                    technical and business expertise in future roles.</p>
-                <!-- <button class="main__btn"><a href="#">Explore</a></button> -->
+            <div id="mobile">
+                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+
             </div>
-        </div>
-    </div>
+        </section>
 
-     <!-- About Section -->
-<div class="main" id="about">
-    <h1>Education</h1>
-    <div class="main__container">
-        <div class="main__img--container">
-            <img src="https://demographicperspectives.com/wp-content/uploads/2019/08/University-of-Washington-e1569276289826.jpg">
-        </div>
-        <div class="main__img--container">
-            <a href = "https://www.washington.edu/">
-                <h2>University of Washington</h2>
-                <!-- <p>Expected 2025</p> -->
-                    <p>- Computer Engineering</p>
-            </a>
-        </div>
-        <div class="main__img--container">
-            <a href ="https://www.pitt.edu/">
-                <h2>University of Pittsburgh</h2>
-                <!-- <p>Completed 2016</p> -->
-                <p>- Business Management</p>
-                <p>- Business Information Systems</p>
-            </a>
-        </div>
-        <div class="main__img--container">
-            <img src="https://i.etsystatic.com/6245917/r/il/7cb2e4/870606290/il_fullxfull.870606290_mab1.jpg">
-        </div>
-    </div>
-</div>
-
-
-    <!-- Services Section -->
-    <div class="services" id="services">
-        <h1>Work Experience</h1>
-        <div class="services__wrapper">
-            <div class="services__card">
-                <!-- <img src="https://images.squarespace-cdn.com/content/v1/58c9f49846c3c4a643f3ed82/1550185852909-GFI1CHG9W4ZIGPXBDFI5/Seattle%2BGreat%2BWheel.jpg"> -->
-                <a href = "https://www.minerslanding.com/">
-                    <h2>Pier 57/Miner's Landing</h2>
-                </a>
-                <p>Software Engineer / Hardware Engineer</p>
-                <div class="services__btn"><button><a href="#pier">See More</a></button></div>
-            </div>
-            <div class="services__card1">
-                <a href = "https://anningjohnson.com/">
-                    <h2>Anning-Johnson</h2>
-                </a>
-                <p>Project Manager / Engineer / Estimator</p>
-                <div class="services__btn"><a href="#estimator"><button>See More</a></button></div>
-            </div>    
-            <div class="services__card2">
-                <a href = "https://anningjohnson.com/locations/seattle/">
-                    <h2>Anning-Johnson</h2>
-                </a>
-                <p>Utility Lead / Field Carpenter</p>
-                <div class="services__btn"><button><a href="#carpenter">See More</a></button></div>
-            </div>
-            <div class="services__card3">
-                <a href = "https://www.gotgreenseattle.org/">
-                    <h2>Got Green</h2>
-                </a>
-                <p>Green Analyst</p>
-                <div class="services__btn"><button><a href="#green">See More</a></button></div>
-            </div>
-        </div>    
-    </div>
-</div>
-
-<!-- Features Section
-<div class="main" id="sign-up">]
-    <div class="main__container">
-        <div class="main__content">
-            <a href = "https://github.com/bighent3">
-            <h1>PLEASE VIEW PROJECTS</h1>
-            </a>
-            <h4>Software Engineering Projects</h4>
-            <h4>Quant Projects</h4>
-            <h4>Personal Projects</h4>
-            <button class="main__btn"><a href="#">Sign Up</a></button>
-        </div>
-        <div class="main__img--container">
-            <div class="/" id="/">
-                <img src="https://media.licdn.com/dms/image/v2/D5603AQE7dQFoi3LWiw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1674579403010?e=1731542400&v=beta&t=6BKEua6tjOC-b8QRMx4PT5TT6nExQFRd0DQd0idvE7I">
-                <i class="/"></i>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<div class="experience">
-    <div class="experience__carpenter" id="carpenter">
-        <h1><a href="https://anningjohnson.com/locations/seattle/"> West Coast Tour Partners</a></h1>
-        <h2>Software Engineer</h2>
-        <p>-Utilized APIs, CSS, HTML, Javascript to build tour app</p>
-        <p>-Prototyped computer vision powered augmented reality games for immersive tourist experiences</p>
-        <p>-Designed full-stack system architecture, managing server deployments,, testing and security</p>
-        <p>-Developed tour logistics, routes, hardware and safety training programs</p>
-        <p>-Executed marketing plan via social media management (facebook, instagram, linkedin, tiktok, tripadvisor and youtube) with SE optimzed placements</p>
-        <p>-Content development for present products and upcoming game</p>
-    </div>
-        <div class="experience__pier" id="">
-        <h1><a href= "/">OfficeRoux</a></h1>.
-        <h2>Software & AI/ML Consultant (Founder)</h2>
-        <p>Small business consulting with emphasis on software development</p>
-        <p>-Provide software development and AI/ML consulting to small businesses, from web application design to deployment planning</p>
-        <p>-Developed client solutions for data-driven decision-making and workflow automation</p>
-        <p>Web Application Development includes the following task:</p>
-        <p>-Frontend design and development JavaScript, CSS, HTML</p>
-        <p>-Backend architecture design and development JavaScript, Node.js, Python</p>
-        <p>-Utilizing GIT for version control and collaboration</p>  
-        <p>-Initializing, updating, managing MongoDB database</p>
-        <p>-Loading product configurations</p>
-        <p>-Registering services</p>
-        <p>-Identifying cyber security threats, developing security protocols </p>
-        <p>-In process of developing plan to utilize cloud services for deployment and data storage.</p>
-        <p>-Business planning, marketing, forecast and administrative task</p>
-        <p>In early stage of developing machine learning engine to better serve customers</p>
-        <p>Will be available on Apple and Google stores in near future.</p>
-        <p>Additional details forthcoming at a later date</p>
-    <div class="experience__pier" id="pier">
-        <h1><a href="https://www.minerslanding.com/">  Miner’s Landing/Pier 57</a> </h1>
-        <h2>Software Engineer / Hardware Engineer</h2>
-        <p>-Programming Languages: Java, Python, R, SQL, HTML, CSS, JavaScript, Ruby</p>
-        <p>-Utilized RESTful APIs, React, AWS, Node.js & MongoDB for web app development and deployment.</p>
-        <p>-Completed projects that required Frontend and Backend proficiency.</p>
-        <p>-Created Python Flask server and SQL database for maintaining applications in the backend.</p>
-        <p>-Utilized GIT for project collaboration, active in testing, security, project and database management</p>
-        <div>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/vBfQ4etS9WQ?si=YWpUH9uohkNr85yq" 
-           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-           gyroscope; picture-in-picture; web-share" 
-           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="experience__estimator" id="estimator">
-        <h1><a href="https://anningjohnson.com/"> Anning-Johnson Construction</a></h1>
-        <h2>Estimator/Project Manager / Project Engineer</h2>
-        <p>-Estimated over $200 million in project material/labor cost from plan sets and specifications</p>
-        <p>-Value Engineered architectural and structural details to yield winning, yet profitable projects</p>
-        <p>-Brainstormed, budgeted, and hosted client outings leading to future partnerships</p>
-        <p>-Analyzed subcontractor bids, awarded contracts, tracked construction milestones</p>
-        <p>-Reviewed, revised client contracts, negotiated changes in boiler plate and value</p>
-        <p>-Won government/union market recovery/subsidy awards to gain competitive edge</p>
-        <p>-Engineered and negotiated to solutions to return delayed projects to schedule</p>
-        <p>-Identified and priced plan set changes, tracked RFIs, negotiated additional payment
-        <p>-Engineered and negotiated to solutions to return delayed projects to schedule</p>
-        <p>-Utilized (Auto)CAD, BIM, Bluebeam, PlanGrid, On Center Quickbid/On Screen Takeoff software to compile digital bids/project changes</p>
-        <p>-Engineered and negotiated to solutions to return delayed projects to schedule</p>
-        <p>-Completed 100% of projects with profit of greater than budgeted</p>
-        <p>-Portfolio: <a href="https://www.hollandresidential.com/wa/seattle/kiara#section-1">Kiara Tower</a>, <a href="https://www.bxp.com/properties/madison-centre">Madison Centre</a>, Lululemon & <a href="https://www.varch.com/seattle">UBS Offices</a>, <a href="https://www.bellevuedowntown.com/go/lincoln-square-south">Lincoln Square Tower</a></p>
-    </div>
-    <div class="experience__carpenter" id="carpenter">
-        <h1><a href="https://anningjohnson.com/locations/seattle/"> Anning-Johnson Construction</a></h1>
-        <h2>IT/Utility Lead / Field Carpenter</h2>
-        <p>-Installed and maintained project technological infrastructure on active construction sites</p>
-        <p>-Directed and led team of 20+ Utility carpenters through project task list</p>
-        <p>-Inventoried, ordered, forecasted and received site equipment and materials</p>
-        <p>-Coordinated composite inter-team project meetings with clients and outside contractors</p>
-    </div>
-    <div class="experience__green" id="green">
-        <h1><a href="https://www.gotgreenseattle.org/"> Got Green</a></h1>
-        <h2>Green Analyst</h2>
-        <p>-Collaborated with <a href="https://vanjones.net/">Van Jones</a> Washington State Congress on behalf of a passed green jobs bill</p>
-        <p>-Spoke at local high/tech schools and community colleges to promote green technology</p>
-        <p>-Taught solar panel installation and home weatherization to college students</p>
-        <p> </p>
-        <p> </p>
-    </div>
-</div>
-
- <!-- Services Section -->
- <div class="services" id="gallery">
-
-
-    <h1> </h1>
-    <h1>Gallery</h1>
-     <section class="container">
+        <section class="container">
             <div class="slider-wrapper">
                 <div class="slider">
-                    <img id="slide-1" src="https://live.staticflickr.com/65535/54322139774_669cf4a935_z.jpg" alt="Aquarium">
-                    <img id="slide-2" src="https://live.staticflickr.com/65535/54321016042_542d0112e3_z.jpg" alt="chihuly">
-                    <img id="slide-3" src="https://live.staticflickr.com/65535/54321907546_ac1bba9c55_b.jpg" alt="Inside Wheel">
-                    <img id="slide-4" src="https://live.staticflickr.com/65535/54322136993_32206e9d9f_z.jpg" alt="Great Wheel">
+                    <img id="slide-1" src="img/beer.jpg" alt="Aquarium">
+                    <img id="slide-2" src="img/call.jpg" alt="chihuly">
+                    <img id="slide-3" src="img/chips.jpg" alt="Inside Wheel">
+                    <img id="slide-4" src="img/chowder.jpg" alt="Great Wheel">
+                    <img id="slide-5" src="img/cocktail.jpg" alt="Gum">
+                    <img id="slide-6" src="img/cookie.jpg" alt="Hammer">
+                    <img id="slide-7" src="img/download.jpg" alt="mopop">
+                    <img id="slide-8" src="img/drinkmenu.jpg" alt="pioneer">
+                    <img id="slide-9" src="img/foodmenu.jpg" alt="sculpture">
+                    <img id="slide-10" src="img/happyorca.jpg" alt="Spheres">
+                    <img id="slide-11" src="img/IMG_4710.jpg" alt="Waterfall">
+                    <img id="slide-1" src="img/IMG_4712.jpg" alt="Aquarium">
+                    <img id="slide-2" src="img/juice.HEIC" alt="chihuly">
+                    <img id="slide-3" src="img/logo.png" alt="Inside Wheel">
+                    <img id="slide-4" src="img/pier57.jpg" alt="Great Wheel">
+                    <img id="slide-5" src="img/postcard.JPG" alt="Gum">
+                    <img id="slide-6" src="img/Salish-Sea-Tours-Squashed-2.webp" alt="Hammer">
+                    <img id="slide-7" src="img/top.jpg" alt="mopop">
+                    <img id="slide-8" src="img/wheel.jpeg" alt="pioneer">
+                    <img id="slide-9" src="img/wheelboat.JPG" alt="sculpture">
+                    <img id="slide-10" src="img/happyorca.jpg" alt="Spheres">
+                    <img id="slide-11" src="img/IMG_4710.jpg" alt="Waterfall">
                 </div>
                 <div class="slider-nav">
                     <a href="#slide-1"></a>
                     <a href="#slide-2"></a>
                     <a href="#slide-3"></a>
                     <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
+                    <a href="#slide-8"></a>
+                    <a href="#slide-9"></a>
+                    <a href="#slide-10"></a>
+                    <a href="#slide-11"></a>
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
+                    <a href="#slide-8"></a>
+                    <a href="#slide-9"></a>
+                    <a href="#slide-10"></a>
+                    <a href="#slide-11"></a>
                 </div>
             </div>
         </section>
 
-    <!-- <div class="services__wrapper">
-        <div class="services__card4">
-        </div>
-        <div class="services__card5">
-        </div>    
-        <div class="services__card6">
-        </div>
-        <div class="services__card7">
-        </div>
-    </div>     -->
-</div>
+        <section id="hero">
+            <h4>Come learn the history of the pacific northwest</h4>
+            <h2>We have the best boats</h2>
+            <h1>Only with Salish Sea Tours</h1>
+            <p>Check out our ticket booth for frequently asked questions</p>
+            <button>Purchase Here</button>
+        </section>
 
-<!-- Footer Section -->
-<div class="footer__container">
-    <div class="footer__links">
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items"  id="projects">
-                <h2>Favorite Projects</h2>
-                <a href="https://github.com/bighent3/LetterInventory"> Letter Inventory </a>
-                <a href="https://github.com/bighent3/bnf">Backus-Naur Form</a>
-                <a href="https://github.com/bighent3/Hangman">Evil Hangman</a>
-                <a href="https://github.com/bighent3/AnagramSolver">Anagram Solver</a>
+        <section id="feature" class="section-p1">
+            <div class="feature-box">
+                <img src="img/beer.jpg" alt="">
+                <h6>Free Shipping</h6>
             </div>
-            <div class="footer__link--items">
-                <h2>Websites Built</h2>
-                <a href="MannaPaint.github.io">In Progress</a>
-                <a href="https://savoreexperience.com/">Test</a>
-                <a href="/">Test2</a>
-                <a href="/">/</a>
+                        <div class="feature-box">
+                <img src="img/call.jpg" alt="">
+                <h6>Free Shipping</h6>
             </div>
-            <div class="footer__link--items">
-                <h2>Quant Projects</h2>
-                <a href="https://github.com/bighent3/IMC25MT1">Round 1</a>
-                <a href="/">/</a>
-                <a href="/">/</a>
-                <a href="/">/</a>
+                        <div class="feature-box">
+                <img src="img/top.jpg" alt="">
+                <h6>Free Shipping</h6>
             </div>
-        </div>
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>AI/ML         Projects</h2>
-                <a href="/">/</a>
-                <a href="/">/</a>
-                <a href="/">/</a>
-                <a href="/">/</a>
+                        <div class="feature-box">
+                <img src="img/cocktail.jpg" alt="">
+                <h6>Free Shipping</h6>
             </div>
-            <div class="footer__link--items">
-                <h2>Personal Projects</h2>
-                <a href="https://github.com/bighent3/ditto">Ditto</a>
-                <a href="https://github.com/bighent3/GrammarSolver">Grammar Solver</a>
-                <a href="https://github.com/bighent3/HuffmanTree">Huffman Tree</a>
-                <a href="https://github.com/bighent3/jsonSearchTree">JSON Search Tree </a>
+                        <div class="feature-box">
+                <img src="img/juice.HEIC" alt="">
+                <h6>Free Shipping</h6>
             </div>
-        </div>
-    </div>
-    <section class="social__media">
-        <div class="social__media--wrap">
-            <div class="footer__logo">
-                <a href="" id="footer__logo"></a>
-            </div> 
-            <p class="website__rights">Written in Javascript, CSS & HTML
-                <br>
-                <a href="https://evelynmaephoto.com/">Photo Cred: Evelyn Mae Photography</a>
-                <br>
-                                <!-- Resume Download Link -->
-                <a href="Henton_Resume_QR.pdf" download>
-                <button>Download My Resume</button>
-                </a>
-            </p>
-            <br>
-            <br>
-            <br>
-            <!-- <p><a href="https://evelynmaephoto.com/">Photo Cred: Evelyn Mae Photography</a></p> -->
-            <div class="social__icons"></div>
-            <a href="https://www.facebook.com/henton.haileymarshall/" class="social__icon--link" target=""_blank>
-            <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/bighent3/" class="social__icon--link">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/@BIGHent23" class="social__icon--link">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/henton-hailey-marshall-b7452435/" class="social__icon--link">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://x.com/BIGHent3" class="social__icon--link">
-            <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://github.com/bighent3" class="social__icon--link">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </section>
-</div>
+                        <div class="feature-box">
+                <img src="img/cocktail.jpg" alt="">
+                <h6>Free Shipping</h6>
+            </div>
+                        <div class="feature-box">
+                <img src="img/chowder.jpg" alt="">
+                <h6>Free Shipping</h6>
+            </div>
+        </section>
 
-<!-- <script>
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slider");
-//   let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script> -->
+        <!-- <h1>Grace is a poopy pants</h1> -->
+        <h1>Grace is a poopy pants</h1>
 
-<script src="app.js"></script>
-</body>
+        <section id="product1" class="section-p1">
+            <h2>Featured Products</h2>
+            <p>Summer Collection</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="img/happyorca.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-SHirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart"></i></a>
+                </div>
+                <div class="pro"> 
+                    <img src="img/pier57.jpg" alt="">
+                    <div class="des">
+                        <span>nike</span>
+                        <h5>Nike Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>    
+                        <h4>$78</h4>
+                    </div>
+                <a href="#"><i class="fal fa-shopping-cart"></i></a>
+                </div>
+                <div class="pro"> 
+                    <img src="img/pier57.jpg" alt="">
+                    <div class="des">
+                        <span>nike</span>
+                        <h5>Nike Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>    
+                        <h4>$78</h4>
+                    </div>
+                <a href="#"><i class="fal fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="banner" class="section-m1">
+            <h4>Repair Services</h4>
+            <h2>Up to <span>70% Off</span> - All T-shirts</h2>
+            <button class="normal">Explore More</button>
+        </section>
+
+        <section id="sm-banner" class="section-p1">
+            <div class="banner-box">
+                <h4>crazy deal</h4>
+                <h2>buy 1 get 1 free</h2>
+                <span>The best salish gear is on sale</span>
+                <button class="white">Learn More</button>
+            </div>
+            <div class="banner-box banner-box2">
+                <h4>new gear here</h4>
+                <h2>buy 2 get 2 free</h2>
+                <span>Check this out</span>
+                <button class="white">Collection</button>
+            </div>
+        </section>
+
+        <section id="banner3">
+            <div class="banner-box">
+                <!-- <h4>new gear here</h4> -->
+                <h2>SEASONAL SALE</h2>
+                <!-- <span>Check this out</span> -->
+                <!-- <button class="white">Collection</button> -->
+                <h3>Winter Collection 50% off</h3>
+            </div>
+            <div class="banner-box banner-box2">
+                <h2>SEASONAL SALE</h2>
+                <h3>Winter Collection 50% off</h3>
+            </div>
+            <div class="banner-box banner-box3">
+                <h2>T Shirts</h2>
+                <h3>New Trendy Prints</h3>
+            </div>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign up for newsletters</h4>
+                <p>Get Email updates about our latest shop and <span>special offers</span>.</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img src="img/download.jpg" alt="">
+                <p></p>
+                <p><strong>Address:</strong> 1301 Alaskan Way, Seattle, WA, 98101</p>
+                <p><strong>Phone:</strong> (206) 623-8600</p>
+                <p><strong>Hours:</strong> 10 AM - 9 PM</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+
+                        <div class="col">
+                <h4>About</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store of Google Play</p>
+                <div class="row">
+                    <img src="img/download.jpg" alt="">
+                    <img src="img/download.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways </p>
+                <img src="img/download.jpg" alt="">
+            </div>
+
+            <div class="copyright">
+                <p>2025, Hentech </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
-
-
-
-
