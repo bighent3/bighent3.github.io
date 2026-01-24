@@ -150,7 +150,7 @@
         font-size: 1.6rem;
     }
 
-    #navbar__logo {
+    .navbar__logo {
         padding-left: 25px;
     }
 
@@ -1137,3 +1137,4 @@ background-clip: text;
     margin: 0;                 /* Remove any default margins */
     padding: 5px 0;           /* Optional: Add spacing between elements */
 }
+
